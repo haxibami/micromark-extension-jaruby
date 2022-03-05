@@ -1,0 +1,74 @@
+{
+  "name": "micromark-extension-jaruby",
+  "version": "0.1.0",
+  "description": "micromark extension to support Japanese ruby",
+  "scripts": {
+    "build": "npm run clean && tsc && micromark-build",
+    "clean": "rimraf \"dev/**/*.d.ts\" \"test/**/*.d.ts\"",
+    "format": "prettier . -w --loglevel warn && eslint --fix .",
+    "test-type": "type-coverage",
+    "test-api": "node test/index.js",
+    "test-coverage": "c8 --check-coverage --branches 90 --functions 90 --lines 90 --statements 90 --reporter lcov node test/index.js",
+    "test": "npm run build && npm run test-type && npm run format && npm run test-coverage",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "micromark",
+    "micromark-extension",
+    "ruby",
+    "markdown",
+    "unified"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haxibami/micromark-extension-jaruby.git"
+  },
+  "bugs": "https://github.com/haxibami/micromark-extension-jaruby/issues",
+  "author": "haxibami <contact@haxibami.net> (https://haxibami.net)",
+  "contributors": [
+    "haxibami <contact@haxibami.net> (https://haxibami.net)"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dev/",
+    "lib/",
+    "index.d.ts",
+    "index.js"
+  ],
+  "exports": {
+    "development": "./dev/index.js",
+    "default": "./index.js"
+  },
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "strict": true,
+    "ignoreCatch": true
+  },
+  "dependencies": {
+    "micromark-util-character": "^1.1.0",
+    "micromark-util-chunked": "^1.0.0",
+    "micromark-util-normalize-identifier": "^1.0.0",
+    "micromark-util-resolve-all": "^1.0.0",
+    "micromark-util-symbol": "^1.0.1",
+    "micromark-util-types": "^1.0.2",
+    "uvu": "^0.5.3"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.13.2",
+    "c8": "^7.11.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "micromark": "^3.0.10",
+    "micromark-build": "^1.1.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "tape": "^5.5.2",
+    "type-coverage": "^2.21.0",
+    "typescript": "^4.6.2"
+  }
+}
