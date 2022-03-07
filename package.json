@@ -59,16 +59,16 @@
     "uvu": "^0.5.3"
   },
   "devDependencies": {
-    "@types/tape": "^4.13.2",
-    "c8": "^7.11.0",
-    "eslint": "^8.10.0",
-    "eslint-config-prettier": "^8.5.0",
-    "micromark": "^3.0.10",
-    "micromark-build": "^1.1.0",
-    "prettier": "^2.5.1",
-    "rimraf": "^3.0.2",
-    "tape": "^5.5.2",
-    "type-coverage": "^2.21.0",
-    "typescript": "^4.6.2"
+    "@types/tape": "4.13.2",
+    "c8": "7.11.0",
+    "eslint": "8.10.0",
+    "eslint-config-prettier": "8.5.0",
+    "micromark": "3.0.10",
+    "micromark-build": "1.1.0",
+    "prettier": "2.5.1",
+    "rimraf": "3.0.2",
+    "tape": "5.5.2",
+    "type-coverage": "2.21.0",
+    "typescript": "4.6.2"
   }
 }
