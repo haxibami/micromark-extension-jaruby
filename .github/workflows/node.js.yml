@@ -10,7 +10,7 @@ env:
   pnpm-version: latest
 
 jobs:
-  preview:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:

@@ -1,5 +1,10 @@
 # micromark-extension-jaruby
 
+[![Node.js CI](https://github.com/haxibami/micromark-extension-jaruby/actions/workflows/node.js.yml/badge.svg)](https://github.com/haxibami/micromark-extension-jaruby/actions/workflows/node.js.yml)
+[![Node.js Package](https://github.com/haxibami/micromark-extension-jaruby/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/haxibami/micromark-extension-jaruby/actions/workflows/npm-publish.yml)
+[![codecov](https://codecov.io/gh/haxibami/micromark-extension-jaruby/branch/main/graph/badge.svg?token=T1MNL1L1O7)](https://codecov.io/gh/haxibami/micromark-extension-jaruby)
+[![GitHub license](https://img.shields.io/github/license/haxibami/micromark-extension-jaruby)](https://github.com/haxibami/micromark-extension-jaruby/blob/main/LICENSE)
+
 [micromark](https://github.com/micromark/micromark) extension to support Japanese ruby.
 
 ## Feature
