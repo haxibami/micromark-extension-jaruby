@@ -13,7 +13,7 @@ specifiers:
   micromark-util-resolve-all: ^1.0.0
   micromark-util-symbol: ^1.0.1
   micromark-util-types: ^1.0.2
-  prettier: 2.5.1
+  prettier: 2.6.0
   rimraf: 3.0.2
   tape: 5.5.2
   type-coverage: 2.21.1
@@ -36,7 +36,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.11.0
   micromark: 3.0.10
   micromark-build: 1.1.0
-  prettier: 2.5.1
+  prettier: 2.6.0
   rimraf: 3.0.2
   tape: 5.5.2
   type-coverage: 2.21.1_typescript@4.6.2
@@ -1666,8 +1666,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.5.1:
-    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+  /prettier/2.6.0:
+    resolution: {integrity: sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
