@@ -65,7 +65,7 @@
     "eslint-config-prettier": "8.5.0",
     "micromark": "3.0.10",
     "micromark-build": "1.1.0",
-    "prettier": "2.6.1",
+    "prettier": "2.6.2",
     "rimraf": "3.0.2",
     "tape": "5.5.2",
     "type-coverage": "2.21.1",
