@@ -61,13 +61,13 @@
   "devDependencies": {
     "@types/tape": "4.13.2",
     "c8": "7.11.0",
-    "eslint": "8.12.0",
+    "eslint": "8.13.0",
     "eslint-config-prettier": "8.5.0",
     "micromark": "3.0.10",
     "micromark-build": "1.1.0",
     "prettier": "2.6.2",
     "rimraf": "3.0.2",
-    "tape": "5.5.2",
+    "tape": "5.5.3",
     "type-coverage": "2.21.1",
     "typescript": "4.6.3"
   }
