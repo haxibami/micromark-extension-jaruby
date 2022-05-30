@@ -5,6 +5,7 @@
  */
 
 import { ok as assert } from "uvu/assert";
+// eslint-disable-next-line no-unused-vars
 import { codes } from "micromark-util-symbol/codes.js";
 import { rubyEnd } from "./ruby-end.js";
 
