@@ -6,7 +6,7 @@ specifiers:
   eslint: 8.19.0
   eslint-config-prettier: 8.5.0
   micromark: 3.0.10
-  micromark-build: 1.2.0
+  micromark-build: 1.3.0
   micromark-util-character: ^1.1.0
   micromark-util-chunked: ^1.0.0
   micromark-util-normalize-identifier: ^1.0.0
@@ -16,7 +16,7 @@ specifiers:
   prettier: 2.7.1
   rimraf: 3.0.2
   tape: 5.5.3
-  type-coverage: 2.21.2
+  type-coverage: 2.22.0
   typescript: 4.7.4
   uvu: ^0.5.3
 
@@ -35,11 +35,11 @@ devDependencies:
   eslint: 8.19.0
   eslint-config-prettier: 8.5.0_eslint@8.19.0
   micromark: 3.0.10
-  micromark-build: 1.2.0
+  micromark-build: 1.3.0
   prettier: 2.7.1
   rimraf: 3.0.2
   tape: 5.5.3
-  type-coverage: 2.21.2_typescript@4.7.4
+  type-coverage: 2.22.0_typescript@4.7.4
   typescript: 4.7.4
 
 packages:
@@ -444,14 +444,14 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /babel-plugin-inline-constants/3.0.0:
-    resolution: {integrity: sha512-eUB+Cs2BelBT56xpNp0KzdZpAldOuL5z3ox6bGEA9ui1SWs0rIlZb0sMayLZ6hXctzwmTUedxMXVFvHvK5tOXw==}
+  /babel-plugin-inline-constants/4.0.1:
+    resolution: {integrity: sha512-m0coLq3/1lMbYSRkyrbZjCQt4JZS2xw0SdusESctaHwVmG675Ks+ETvfNiHKVE0O2NT67HvkWYw2lS2vfZJgFg==}
     dependencies:
       '@babel/types': 7.17.0
       '@types/babel__core': 7.1.18
       '@types/resolve': 1.20.1
-      builtins: 4.0.0
-      import-meta-resolve: 1.1.1
+      builtins: 5.0.1
+      import-meta-resolve: 2.0.2
       resolve: 1.22.0
     dev: true
 
@@ -499,12 +499,6 @@ packages:
       escalade: 3.1.1
       node-releases: 2.0.2
       picocolors: 1.0.0
-    dev: true
-
-  /builtins/4.0.0:
-    resolution: {integrity: sha512-qC0E2Dxgou1IHhvJSLwGDSTvokbRovU5zZFuDY6oY8Y2lF3nGt5Ad8YZK7GMtqzY84Wu7pXTPeHQeHcXSXsRhw==}
-    dependencies:
-      semver: 7.3.5
     dev: true
 
   /builtins/5.0.1:
@@ -1106,12 +1100,6 @@ packages:
       resolve-from: 4.0.0
     dev: true
 
-  /import-meta-resolve/1.1.1:
-    resolution: {integrity: sha512-JiTuIvVyPaUg11eTrNDx5bgQ/yMKMZffc7YSjvQeSMXy58DO2SQ8BtAf3xteZvmzvjYh14wnqNjL8XVeDy2o9A==}
-    dependencies:
-      builtins: 4.0.0
-    dev: true
-
   /import-meta-resolve/2.0.2:
     resolution: {integrity: sha512-e53F4xWZr/pCeLRJreOIJrpKvo9Bm3K1pJSp+xhI6yeuWqSDW1xRiML/VclnSXvke96VCzMkza9avmvd9l9ixA==}
     dependencies:
@@ -1384,12 +1372,12 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /micromark-build/1.2.0:
-    resolution: {integrity: sha512-Lp4JAYjl0BUhci6lh63rGGhl28lpYYViVLZRFSaHM8oSm+3F64QskAdcM5v+zDSGn4v8QWQ5PnouErl8WhaRPg==}
+  /micromark-build/1.3.0:
+    resolution: {integrity: sha512-5ou2lgc/x79OfAce8yANDiBTXoeFEalRKJFtJPXLkX+Ua31jf1rzF0K/+9FS7u5mT+qL7z0fadia8Im6Sj/hxg==}
     hasBin: true
     dependencies:
       '@babel/core': 7.17.5
-      babel-plugin-inline-constants: 3.0.0
+      babel-plugin-inline-constants: 4.0.1
       babel-plugin-unassert: 3.2.0
       babel-plugin-undebug: 2.0.1
       glob: 8.0.3
@@ -1830,7 +1818,7 @@ packages:
     dev: true
 
   /source-map/0.5.7:
-    resolution: {integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=}
+    resolution: {integrity: sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -1942,7 +1930,7 @@ packages:
     dev: true
 
   /to-fast-properties/2.0.0:
-    resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=}
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
     dev: true
 
@@ -1978,8 +1966,8 @@ packages:
       prelude-ls: 1.2.1
     dev: true
 
-  /type-coverage-core/2.21.2_typescript@4.7.4:
-    resolution: {integrity: sha512-GM8lwpZAyurbMjg7BXHYrf5oYXQ9de140iNCKjwtWWUv2xC42oRsUsB7hpfJzFYbd9y8sXRIyDd8JAafYJPjcQ==}
+  /type-coverage-core/2.22.0_typescript@4.7.4:
+    resolution: {integrity: sha512-j2wjwOTeKc/G6RUrgVsBYuDbum2GnJ/pCQ6/DlMvgs1QBXEqZxI9N6okUSFc14veQBzr01gG0cwmdyagKdf3Sg==}
     peerDependencies:
       typescript: 2 || 3 || 4
     dependencies:
@@ -1991,12 +1979,12 @@ packages:
       typescript: 4.7.4
     dev: true
 
-  /type-coverage/2.21.2_typescript@4.7.4:
-    resolution: {integrity: sha512-lEoYaLQuonDnJDB3FSRt4iiKPpgsemdUK2d9sYD0Pxv4Za/G9U6RVj2DBDZQoSmPzuIcjdUczUc2RswMQx6IlQ==}
+  /type-coverage/2.22.0_typescript@4.7.4:
+    resolution: {integrity: sha512-wgM1yH4J5gAszojftiozxb6HSOvoCqYQLmIS5Ybo4HpBtr9BrVgK5duj4e3tkc28Xg6VA2WPB8GFC+oJw352oQ==}
     hasBin: true
     dependencies:
       minimist: 1.2.6
-      type-coverage-core: 2.21.2_typescript@4.7.4
+      type-coverage-core: 2.22.0_typescript@4.7.4
     transitivePeerDependencies:
       - typescript
     dev: true
