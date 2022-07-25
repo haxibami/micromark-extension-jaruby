@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@types/tape": "4.13.2",
-    "c8": "7.11.3",
+    "c8": "7.12.0",
     "eslint": "8.20.0",
     "eslint-config-prettier": "8.5.0",
     "micromark": "3.0.10",
