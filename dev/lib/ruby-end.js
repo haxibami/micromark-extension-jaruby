@@ -155,6 +155,7 @@ function resolveToRubyEnd(events, context) {
 }
 
 /**
+ * @type {Tokenizer}
  * @this {TokenizeContext}
  * @param {Effects} effects
  * @param {State} ok
