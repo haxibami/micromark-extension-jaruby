@@ -2,6 +2,8 @@
  * @typedef {import('micromark-util-types').Construct} Construct
  * @typedef {import('micromark-util-types').Resolver} Resolver
  * @typedef {import('micromark-util-types').Tokenizer} Tokenizer
+ * @typedef {import('micromark-util-types').TokenizeContext} TokenizeContext
+ * @typedef {import('micromark-util-types').Effects} Effects
  * @typedef {import('micromark-util-types').Event} Event
  * @typedef {import('micromark-util-types').Token} Token
  * @typedef {import('micromark-util-types').State} State
@@ -152,7 +154,12 @@ function resolveToRubyEnd(events, context) {
   return events;
 }
 
-/** @type {Tokenizer} */
+/**
+ * @this {TokenizeContext}
+ * @param {Effects} effects
+ * @param {State} ok
+ * @param {State} nok
+ */
 function tokenizeRubyEnd(effects, ok, nok) {
   const self = this;
   let index = self.events.length;
