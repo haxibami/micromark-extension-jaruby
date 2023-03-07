@@ -4,7 +4,7 @@ specifiers:
   '@types/tape': 4.13.2
   c8: 7.13.0
   eslint: 8.35.0
-  eslint-config-prettier: 8.6.0
+  eslint-config-prettier: 8.7.0
   micromark: 3.1.0
   micromark-build: 1.3.0
   micromark-util-character: ^1.1.0
@@ -14,7 +14,7 @@ specifiers:
   micromark-util-symbol: ^1.0.1
   micromark-util-types: ^1.0.2
   prettier: 2.8.4
-  rimraf: 4.3.0
+  rimraf: 4.3.1
   tape: 5.6.3
   type-coverage: 2.24.1
   typescript: 4.9.5
@@ -33,11 +33,11 @@ devDependencies:
   '@types/tape': 4.13.2
   c8: 7.13.0
   eslint: 8.35.0
-  eslint-config-prettier: 8.6.0_eslint@8.35.0
+  eslint-config-prettier: 8.7.0_eslint@8.35.0
   micromark: 3.1.0
   micromark-build: 1.3.0
   prettier: 2.8.4
-  rimraf: 4.3.0
+  rimraf: 4.3.1
   tape: 5.6.3
   type-coverage: 2.24.1_typescript@4.9.5
   typescript: 4.9.5
@@ -792,8 +792,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.6.0_eslint@8.35.0:
-    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
+  /eslint-config-prettier/8.7.0_eslint@8.35.0:
+    resolution: {integrity: sha512-HHVXLSlVUhMSmyW4ZzEuvjpwqamgmlfkutD53cYXLikh4pt/modINRcCIApJ84czDxM4GZInwUrromsDdTImTA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -1912,8 +1912,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/4.3.0:
-    resolution: {integrity: sha512-5qVDXPbByA1qSJEWMv1qAwKsoS22vVpsL2QyxCKBw4gf6XiFo1K3uRLY6uSOOBFDwnqAZtnbILqWKKlzh8bkGg==}
+  /rimraf/4.3.1:
+    resolution: {integrity: sha512-GfHJHBzFQra23IxDzIdBqhOWfbtdgS1/dCHrDy+yvhpoJY5TdwdT28oWaHWfRpKFDLd3GZnGTx6Mlt4+anbsxQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
