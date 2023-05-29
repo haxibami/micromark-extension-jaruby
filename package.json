@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@types/tape": "5.6.0",
-    "c8": "7.13.0",
+    "c8": "7.14.0",
     "eslint": "8.41.0",
     "eslint-config-prettier": "8.8.0",
     "micromark": "3.1.0",
@@ -68,7 +68,7 @@
     "prettier": "2.8.8",
     "rimraf": "5.0.1",
     "tape": "5.6.3",
-    "type-coverage": "2.25.3",
+    "type-coverage": "2.26.0",
     "typescript": "5.0.4"
   }
 }
