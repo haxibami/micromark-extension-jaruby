@@ -1,6 +1,6 @@
 {
   "name": "micromark-extension-jaruby",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "micromark extension to support Japanese ruby",
   "scripts": {
     "build": "tsc --build --clean && tsc --build && micromark-build",
