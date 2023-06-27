@@ -13,8 +13,7 @@ import { ok as assert } from "uvu/assert";
 import { push, splice } from "micromark-util-chunked";
 import { normalizeIdentifier } from "micromark-util-normalize-identifier";
 import { resolveAll } from "micromark-util-resolve-all";
-import { codes } from "micromark-util-symbol/codes.js";
-import { types } from "micromark-util-symbol/types.js";
+import { codes, types } from "micromark-util-symbol";
 import { markdownLineEnding } from "micromark-util-character";
 import { markdownSpace } from "micromark-util-character";
 
@@ -96,18 +95,21 @@ function resolveToRubyEnd(events, context) {
   assert(open !== undefined, "`open` is supposed to be found");
   assert(close !== undefined, "`close` is supposed to be found");
 
+  /** @type {Token} */
   const group = {
     type: "ruby",
     start: Object.assign({}, events[open][1].start),
     end: Object.assign({}, events[events.length - 1][1].end),
   };
 
+  /** @type {Token} */
   const label = {
     type: "rubyLabel",
     start: Object.assign({}, events[open][1].start),
     end: Object.assign({}, events[close][1].end),
   };
 
+  /** @type {Token} */
   const text = {
     type: "rubyText",
     start: Object.assign({}, events[open + 2][1].end),
@@ -129,7 +131,7 @@ function resolveToRubyEnd(events, context) {
   media = push(
     media,
     resolveAll(
-      context.parser.constructs.insideSpan.null,
+      context.parser.constructs.insideSpan.null ?? [],
       events.slice(open + 4, close - 3),
       context
     )
