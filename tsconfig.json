@@ -1,17 +1,20 @@
 {
-  "include": ["dev/**/*.js"],
-  "exclude": ["test/print.js"],
+  "include": ["dev/**/*.js", "dev/index.d.ts"],
+  "exclude": [
+    "coverage/",
+    "lib/",
+    "node_modules/",
+    "test/print.js",
+    "index.js"
+  ],
   "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["ES2020"],
-    "module": "ES2020",
-    "moduleResolution": "node",
-    "allowJs": true,
     "checkJs": true,
+    "customConditions": ["development"],
     "declaration": true,
     "emitDeclarationOnly": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "strict": true
+    "lib": ["es2022"],
+    "module": "node16",
+    "strict": true,
+    "target": "es2022"
   }
 }
