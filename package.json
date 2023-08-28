@@ -60,14 +60,14 @@
   "devDependencies": {
     "@types/tape": "5.6.0",
     "c8": "8.0.1",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
     "micromark": "4.0.0",
     "micromark-build": "2.0.2",
     "prettier": "3.0.2",
     "rimraf": "5.0.1",
     "tape": "5.6.6",
-    "type-coverage": "2.26.0",
-    "typescript": "5.1.6"
+    "type-coverage": "2.26.1",
+    "typescript": "5.2.2"
   }
 }
