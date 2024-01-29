@@ -66,7 +66,7 @@
     "micromark-build": "2.0.2",
     "prettier": "3.2.4",
     "rimraf": "5.0.5",
-    "tape": "5.7.3",
+    "tape": "5.7.4",
     "type-coverage": "2.27.1",
     "typescript": "5.3.3"
   }
