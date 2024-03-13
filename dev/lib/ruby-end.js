@@ -133,8 +133,8 @@ function resolveToRubyEnd(events, context) {
     resolveAll(
       context.parser.constructs.insideSpan.null ?? [],
       events.slice(open + 4, close - 3),
-      context
-    )
+      context,
+    ),
   );
 
   // Text close, marker close, label close.
@@ -197,8 +197,8 @@ function tokenizeRubyEnd(effects, ok, nok) {
     defined =
       self.parser.defined.indexOf(
         normalizeIdentifier(
-          self.sliceSerialize({ start: rubyStart.end, end: self.now() })
-        )
+          self.sliceSerialize({ start: rubyStart.end, end: self.now() }),
+        ),
       ) > -1;
     effects.enter("rubyEnd");
     effects.enter("rubyMarker");
@@ -225,7 +225,7 @@ function tokenizeRubyEnd(effects, ok, nok) {
       return effects.attempt(
         pronunciationConstruct,
         ok,
-        defined ? ok : balanced
+        defined ? ok : balanced,
       )(code);
     }
 

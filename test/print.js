@@ -8,5 +8,5 @@ console.log(
   micromark(markdown, {
     extensions: [syntax()],
     htmlExtensions: [html()],
-  })
+  }),
 );
