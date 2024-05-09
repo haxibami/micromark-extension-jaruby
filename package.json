@@ -4,7 +4,7 @@
   "description": "micromark extension to support Japanese ruby",
   "scripts": {
     "build": "tsc --build --clean && tsc --build && micromark-build",
-    "format": "prettier . -w --loglevel warn && eslint --fix .",
+    "format": "prettier . -w --log-level warn && eslint --fix .",
     "test-type": "type-coverage",
     "test-api": "node test/index.js",
     "test-coverage": "c8 --check-coverage --branches 90 --functions 90 --lines 90 --statements 90 --reporter lcov node test/index.js",
@@ -60,7 +60,7 @@
   "devDependencies": {
     "@types/tape": "5.6.4",
     "c8": "9.1.0",
-    "eslint": "8.57.0",
+    "eslint": "9.2.0",
     "eslint-config-prettier": "9.1.0",
     "micromark": "4.0.0",
     "micromark-build": "2.0.2",
