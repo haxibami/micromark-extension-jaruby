@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  pnpm-version: latest
+  PNPM_HOME: /home/runner/.local/share/pnpm
 
 jobs:
   test:
@@ -20,11 +20,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3.0.0
-        with:
-          version: ${{ env.pnpm-version }}
-          run_install: false
+      - name: Configure pnpm path
+        run: echo "${{ env.PNPM_HOME }}" >> $GITHUB_PATH
+      - name: Setup pnpm with corepack
+        run: |
+          corepack enable pnpm
+          corepack prepare pnpm@latest --activate
+          SHELL="$(which bash)" pnpm setup --force
       - name: Get pnpm store directory
         id: pnpm-cache
         shell: bash
@@ -38,7 +40,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install node dependencies
-        run: pnpm install
+        run: pnpm i --frozen-lockfile
       - name: Test build
         run: pnpm run test
       - uses: codecov/codecov-action@v4
