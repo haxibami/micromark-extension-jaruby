@@ -5,7 +5,7 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@9.12.0",
+  "packageManager": "pnpm@9.13.2",
   "scripts": {
     "build": "tsc --build --clean && tsc --build && micromark-build",
     "format": "prettier . -w --log-level warn && eslint --fix .",
